@@ -3496,7 +3496,7 @@ for(i = 0; i < pokemons.length; i++) {
 	var newEgg = document.createElement('p');
 	var newSpawn = document.createElement('p');
 	var newAvg = document.createElement('p');
-	var newTime = document.createElement('time');
+	var newTime = document.createElement('p');
 	var newMultipliers = document.createElement('p');
 	var newWeaknesses = document.createElement('p');
 	var newImg = document.createElement('img');
@@ -3520,6 +3520,7 @@ for(i = 0; i < pokemons.length; i++) {
 	newImg.setAttribute('alt', 'Template img');
 	newImg.setAttribute('width', '100%');
 	newImg.setAttribute('height', '200');
+	
 	newWrap.style.marginTop = '10px'
 	newImg.style.display = 'block';
 	newWrap.style.display = 'flex';
