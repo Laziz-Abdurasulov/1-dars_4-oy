@@ -64,3 +64,16 @@ p {
     text-align: center;
     font-size: 36px;
   }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+  }
+
+  .js-select {
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
