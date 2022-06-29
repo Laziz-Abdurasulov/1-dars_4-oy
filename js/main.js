@@ -3504,7 +3504,7 @@ function domgaChiqarator(array, node){
 		var newMultipliers = document.createElement('p');
 		var newWeaknesses = document.createElement('p');
 		var newImg = document.createElement('img');
-		var newOption = document.createElement('option');
+		
 		
 		
 		
@@ -3588,3 +3588,19 @@ elSelect.addEventListener('change', function () {
 
 	domgaChiqarator(result, elList);
 });
+
+
+const optionsList = new Set();
+
+const optionList = [];
+
+pokemons.forEach((element) => {
+	element.type.forEach((el) => optionsList.add(el));
+})  
+	
+optionsList.forEach((type) => {
+	let newOption = document.createElement('option');
+	newOption.textContent = type;
+	newOption.value = type;
+	elSelect.appendChild(newOption);
+})
